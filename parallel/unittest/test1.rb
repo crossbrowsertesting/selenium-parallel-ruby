@@ -4,9 +4,9 @@ require 'test/unit'
 
 class SampleTest1 < Test::Unit::TestCase
   def setup
-    username='mikeh'
-    key=''
-    url = "http://#{username}:#{key}@hub.crossbrowsertesting.com:80/wd/hub"
+    username=''
+    authkey=''
+    url = "http://#{username}:#{authkey}@hub.crossbrowsertesting.com:80/wd/hub"
     caps = Selenium::WebDriver::Remote::Capabilities.new
     caps["name"] = "Ruby Parallel"
     caps["browser_api_name"] = "IE10"
