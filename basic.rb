@@ -36,7 +36,7 @@ end
 
 caps = Selenium::WebDriver::Remote::Capabilities.new
 
-caps["name"] = "Selenium Test Example"
+caps["name"] = "Basic - Selenium Test Example"
 caps["build"] = "1.0"
 caps["browser_api_name"] = "IE10"
 caps["os_api_name"] = "Win7x64-C2"
