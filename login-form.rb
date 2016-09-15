@@ -19,7 +19,7 @@ class LoginFormTest < Test::Unit::TestCase
 
 			caps = Selenium::WebDriver::Remote::Capabilities.new
 
-			caps["name"] = "Login Form - Selenium Test Example"
+			caps["name"] = "Login Form Example"
 			caps["build"] = "1.0"
 			caps["browser_api_name"] = "Chrome53"
 			caps["os_api_name"] = "Win8"

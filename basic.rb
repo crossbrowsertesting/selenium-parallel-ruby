@@ -20,7 +20,7 @@ class BasicTest < Test::Unit::TestCase
 
             caps = Selenium::WebDriver::Remote::Capabilities.new
 
-            caps["name"] = "Basic - Selenium Test Example"
+            caps["name"] = "Basic Example"
             caps["build"] = "1.0"
             caps["browser_api_name"] = "Chrome53"
             caps["os_api_name"] = "Win8"

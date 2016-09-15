@@ -19,7 +19,7 @@ class DragAndDropTest < Test::Unit::TestCase
 
 			caps = Selenium::WebDriver::Remote::Capabilities.new
 
-			caps["name"] = "Drag-and-Drop - Selenium Test Example"
+			caps["name"] = "Drag-and-Drop Example"
 			caps["build"] = "1.0"
 			caps["browser_api_name"] = "Chrome53"
 			caps["os_api_name"] = "Win8"
