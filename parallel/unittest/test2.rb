@@ -8,8 +8,9 @@ class SampleTest2 < Test::Unit::TestCase
     url = "http://#{username}:#{key}@hub.crossbrowsertesting.com:80/wd/hub"
     caps = Selenium::WebDriver::Remote::Capabilities.new
     caps["name"] = "Ruby Parallel"
-    caps["browser_api_name"] = "Chrome43x64"
+    caps["browserName"] = "Chrome"
     caps["os_api_name"] = "Win8.1"
+    caps["version"] = "43x64"
     caps["screen_resolution"] = "1024x768"
     @driver = Selenium::WebDriver.for(:remote,
       :url => url,
