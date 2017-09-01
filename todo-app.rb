@@ -12,8 +12,8 @@ class TodoAppTest < Test::Unit::TestCase
 
 			caps["name"] = "Todo App Example"
 			caps["build"] = "1.0"
-			caps["browser_api_name"] = "Chrome53"
-			caps["os_api_name"] = "Win8"
+			caps["browserName"] = "Chrome"      # pulls latest version by default
+            		caps["platform"] = "Windows 8"      # to specify version, add caps["version"] = "desired version"
 			caps["screen_resolution"] = "1024x768"
 			caps["record_video"] = "true"
 			caps["record_network"] = "true"
