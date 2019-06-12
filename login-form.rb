@@ -25,7 +25,7 @@ class LoginFormTest < Test::Unit::TestCase
             		caps["platform"] = "Windows 8"      # to specify version, add caps["version"] = "desired version"
 			caps["screen_resolution"] = "1024x768"
 			caps["record_video"] = "true"
-			caps["record_network"] = "true"
+			caps["record_network"] = "false"
 
 			driver = Selenium::WebDriver.for(:remote,
 			:url => "http://#{username}:#{authkey}@hub.crossbrowsertesting.com:80/wd/hub",
@@ -70,7 +70,7 @@ class LoginFormTest < Test::Unit::TestCase
 		rescue Exception => ex
 		    puts ("#{ex.class}: #{ex.message}")
 		    cbt_api.setScore(session_id, "fail")
-		ensure     
+		ensure
 		    driver.quit
 		end
 	end
