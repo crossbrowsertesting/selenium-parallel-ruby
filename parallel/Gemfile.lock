@@ -11,7 +11,7 @@ GEM
     parallel_tests (1.6.0)
       parallel
     power_assert (0.2.4)
-    rubyzip (1.1.7)
+    rubyzip (1.2.3)
     selenium (0.2.11)
       jar_wrapper
     selenium-webdriver (2.47.1)
